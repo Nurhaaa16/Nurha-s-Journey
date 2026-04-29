@@ -170,5 +170,40 @@ footer {
     text-align: center;
     padding: 30px;
     background-color: var(--accent-color);
+
+    /* Tambahkan atau perbarui kode ini di bagian bawah style.css */
+
+@media (max-width: 768px) {
+    /* Perbaikan Navigasi */
+    nav {
+        padding: 15px 20px;
+        flex-direction: column; /* Menu pindah ke bawah logo */
+        gap: 10px;
+    }
+
+    /* Perbaikan Header/Hero */
+    header {
+        padding: 100px 20px 60px;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Ukuran teks lebih kecil di ponsel */
+    }
+
+    .hero-logo {
+        width: 150px; /* Logo diperkecil agar tidak memenuhi layar */
+    }
+
+    /* Perbaikan Grid Layanan */
+    .services-grid {
+        grid-template-columns: 1fr; /* Satu kolom saja di ponsel */
+        gap: 15px;
+    }
+
+    /* Padding Section agar tidak terlalu mepet tepi layar */
+    section {
+        padding: 40px 15px;
+    }
+}
     color: var(--white);
 }
